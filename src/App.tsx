@@ -13,9 +13,9 @@ function App() {
     <Main>
     <Home />
 
-    <About/>
+    {/* <About/>
     <Contact/>
-    <Portofolio/>
+    <Portofolio/> */}
 
     </Main>
   

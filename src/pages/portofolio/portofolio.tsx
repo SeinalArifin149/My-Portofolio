@@ -1,13 +1,11 @@
-import { Navbar, Main } from '../../components'
-export function portofolio() {
+// import { Navbar, Main } from '../../components'
+export function Portofolio() {
     return(
-        <div className="bg">
+        <div className="">
 
         {/* <Navbar /> */}
-       <Main>
-      <h1 className="text-white text-3xl">Ini halaman Homepage</h1>
-      <h2 className="text-white">Seinal Arifin</h2>
-    </Main>
+      <h1 className="text-white text-3xl">Ini halaman portofolio</h1>
+      <h2 className="text-white">Seinal Arifin portofolio</h2>
         </div>
     )
 }

@@ -3,14 +3,21 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 // import { Home } from'./pages/home/home'
-import { Home } from'./pages'
+import { Home,About,Contact,Portofolio } from'./pages'
 import { Main } from './components'
 
 function App() {
 
   return (
     <>
+    <Main>
     <Home />
+
+    <About/>
+    <Contact/>
+    <Portofolio/>
+
+    </Main>
   
     </>
   )

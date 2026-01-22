@@ -1,13 +1,11 @@
-import { Navbar, Main } from '../../components'
-export function about() {
+// import { Navbar, Main } from '../../components'
+export function About() {
     return(
-        <div className="bg">
+        <div className="">
 
         {/* <Navbar /> */}
-       <Main>
-      <h1 className="text-white text-3xl">Ini halaman Homepage</h1>
-      <h2 className="text-white">Seinal Arifin</h2>
-    </Main>
+      <h1 className="text-white text-3xl">Ini halaman tentang</h1>
+      <h2 className="text-white">Seinal Arifin tentang</h2>
         </div>
     )
 }

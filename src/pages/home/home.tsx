@@ -4,11 +4,11 @@ export function Home() {
     return(
         <div className="bg">
 
-        <>
-        <Main/>
         {/* <Navbar /> */}
-        <h1>Ini halaman Homepage</h1>
-        </>
+       <Main>
+      <h1 className="text-white text-3xl">Ini halaman Homepage</h1>
+      <h2 className="text-white">Seinal Arifin</h2>
+    </Main>
         </div>
     )
 }

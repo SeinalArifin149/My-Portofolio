@@ -1,0 +1,25 @@
+@keyframes scroll-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-vertical 12s linear infinite;
+}
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 18s linear infinite;
+}
+

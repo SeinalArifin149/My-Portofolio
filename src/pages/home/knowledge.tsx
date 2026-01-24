@@ -1,4 +1,4 @@
-const StatItem = ({ label, value }: { label: React.ReactNode, value: string }) => (
+const StatItem = ({ label, value, }: { label: React.ReactNode, value: string }) => (
   <div className="flex flex-col lg:items-end items-center text-center lg:text-right">
     <span className="text-gray-400 text-sm mb-1">{label}</span>
     <span className="text-4xl md:text-5xl font-bold text-white">{value}</span>

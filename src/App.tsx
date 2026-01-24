@@ -5,7 +5,7 @@ import './App.css'
 // import { Home } from'./pages/home/home'
 import { Home,About,Contact,Portofolio } from'./pages'
 import { Main } from './components'
-
+import 'devicon/devicon.min.css'
 function App() {
 
   return (
@@ -13,9 +13,9 @@ function App() {
     <Main>
     <Home />
 
+    <Portofolio/>
     {/* <About/>
-    <Contact/>
-    <Portofolio/> */}
+    <Contact/> */}
 
     </Main>
   

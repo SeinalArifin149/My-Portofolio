@@ -17,3 +17,8 @@ export function Navbar() {
     </nav>
   )
 }
+export function NavbarDev() {
+  return(
+    <h1>ini navbar dev</h1>
+  )
+}

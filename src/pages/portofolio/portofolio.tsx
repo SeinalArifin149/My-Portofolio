@@ -1,11 +1,25 @@
-// import { Navbar, Main } from '../../components'
-export function Portofolio() {
-    return(
-        <div className="">
+import { Devicon_Left } from "./devicon_left"
+import { Devicon_Right } from "./devicon_right"
+import { HardSkill } from "./hardskill"
+import { SkillBar } from "./skillbar"
 
-        {/* <Navbar /> */}
-      <h1 className="text-white text-3xl">Ini halaman portofolio</h1>
-      <h2 className="text-white">Seinal Arifin portofolio</h2>
-        </div>
-    )
+export function Portofolio() {
+  return (
+    <section className="container mx-auto px-6">
+      <div className="grid grid-cols-12 gap-6 items-start">
+
+        {/* KIRI */}
+        <Devicon_Left />
+
+        {/* TENGAH */}
+        <HardSkill />
+        <SkillBar/>
+
+        <Devicon_Right/>
+
+        {/* (kalau nanti ada kanan, tinggal tambah) */}
+
+      </div>
+    </section>
+  )
 }

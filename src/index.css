@@ -24,12 +24,17 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
 
   /* --- 2. Daftarkan Animasinya --- */
   
   /* Format: --animate-[nama]: [nama-keyframe] [durasi] [tipe] [loop]; */
-  --animate-scroll-down: scroll-down 20s linear infinite;
+  --animate-scroll-down: scroll-down 30s linear infinite;
   --animate-scroll-left: scroll-left 20s linear infinite;
+  --animate-scroll-right: scroll-right 20s linear infinite;
 }
 
 /* :root {

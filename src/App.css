@@ -25,10 +25,10 @@
   /* --- 2. Animations (Nama Class yang dipanggil) --- */
   
   /* Class: animate-scroll */
-  --animate-scroll: scroll-vertical 25s linear infinite;
+  --animate-scroll: scroll-vertical 30s linear infinite;
 
   /* Class: animate-scroll-down */
-  --animate-scroll-down: scroll-down 15s linear infinite;
+  --animate-scroll-down: scroll-down 30s linear infinite;
 
   /* Class: animate-scroll-left */
   --animate-scroll-left: scroll-left 15s linear infinite;

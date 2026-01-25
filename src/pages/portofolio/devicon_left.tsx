@@ -46,7 +46,7 @@ export function Devicon_Left() {
       {/* --- MOBILE VIEW (Horizontal Scroll Left) --- */}
       <div className="md:hidden w-full relative overflow-hidden py-4">
         {/* Pakai w-max dan animate-scroll-left */}
-        <div className="flex w-max animate-scroll-left">
+        <div className="flex w-max animate-scroll-right">
           {[...techStack, ...techStack].map((tech, index) => (
             <div
               key={`left-mob-${index}`}

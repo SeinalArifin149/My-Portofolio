@@ -20,6 +20,18 @@ export function SkillBar() {
       <div className="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
         <div className="bg-green-500 h-full w-[65%] transition-all"></div>
       </div>
+      <table>
+        <tr>
+          <td>web</td>
+        </tr>
+        <tr>
+          <td>Datasience</td>
+        </tr>
+        <tr>
+          <td>Ai</td>
+        </tr>
+      </table>
     </div>
+    
   )
 }

@@ -8,33 +8,30 @@
   @apply bg-gradient-to-br from-black via-slate-900 to-black;
 }
 
-@import "tailwindcss";
-
-@theme {
-  /* --- 1. Definisi Keyframes --- */
-  
-  /* Animasi Turun (Vertical) */
-  @keyframes scroll-down {
-    0% { transform: translateY(-50%); }
-    100% { transform: translateY(0); }
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
   }
-
-  /* Animasi Kiri (Horizontal) */
-  @keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  100% {
+    transform: translateY(100%);
   }
-  @keyframes scroll-right {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
-  }
+}
 
-  /* --- 2. Daftarkan Animasinya --- */
-  
-  /* Format: --animate-[nama]: [nama-keyframe] [durasi] [tipe] [loop]; */
-  --animate-scroll-down: scroll-down 30s linear infinite;
-  --animate-scroll-left: scroll-left 20s linear infinite;
-  --animate-scroll-right: scroll-right 20s linear infinite;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down 15s linear infinite;
 }
 
 /* :root {

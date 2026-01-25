@@ -27,7 +27,7 @@ export function SkillBar() {
                 <div className="flex justify-center gap-3 text-xl">
                   <i className="devicon-react-original colored"></i>
                   <i className="devicon-laravel-original colored"></i>
-                  <i className="devicon-nodejs-original colored"></i>
+                  {/* <i className="devicon-nodejs-original colored"></i> */}
                   <i className="devicon-tailwindcss-original colored"></i>
                 </div>
               </td>
@@ -52,7 +52,7 @@ export function SkillBar() {
                   <i className="devicon-python-plain colored"></i>
                   <i className="devicon-tensorflow-original colored"></i>
                   <i className="devicon-streamlit-plain colored"></i>
-                  <i className="devicon-flask-original colored"></i>
+                  {/* <i className="devicon-flask-original colored"></i> */}
                 </div>
               </td>
             </tr>

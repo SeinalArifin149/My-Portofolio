@@ -1,25 +1,35 @@
-@keyframes scroll-vertical {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
-}
+@import "tailwindcss";
 
-.animate-scroll {
-  animation: scroll-vertical 12s linear infinite;
-}
-@keyframes scroll-down {
-  0% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
+@theme {
+  /* --- 1. Keyframes (Definisi Gerakan) --- */
 
-.animate-scroll-down {
-  animation: scroll-down 18s linear infinite;
-}
+  /* Scroll Vertikal (Naik) */
+  @keyframes scroll-vertical {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
 
+  /* Scroll Vertikal (Turun) */
+  @keyframes scroll-down {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0%); }
+  }
+
+  /* Scroll Horizontal (Kiri) */
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    /* UBAH: Jadi -50% agar loop tidak putus saat konten diduplikasi */
+    100% { transform: translateX(-50%); }
+  }
+
+  /* --- 2. Animations (Nama Class yang dipanggil) --- */
+  
+  /* Class: animate-scroll */
+  --animate-scroll: scroll-vertical 25s linear infinite;
+
+  /* Class: animate-scroll-down */
+  --animate-scroll-down: scroll-down 15s linear infinite;
+
+  /* Class: animate-scroll-left */
+  --animate-scroll-left: scroll-left 15s linear infinite;
+}

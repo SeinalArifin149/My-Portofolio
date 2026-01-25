@@ -1,12 +1,37 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
 
 .navbar {
   @apply flex justify-between items-center px-6 py-4;
-} 
-.bg {
-  @apply bg-gradient-to-br from-black via-slate-900 to-black
-
 }
+
+.bg {
+  @apply bg-gradient-to-br from-black via-slate-900 to-black;
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* --- 1. Definisi Keyframes --- */
+  
+  /* Animasi Turun (Vertical) */
+  @keyframes scroll-down {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0); }
+  }
+
+  /* Animasi Kiri (Horizontal) */
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* --- 2. Daftarkan Animasinya --- */
+  
+  /* Format: --animate-[nama]: [nama-keyframe] [durasi] [tipe] [loop]; */
+  --animate-scroll-down: scroll-down 20s linear infinite;
+  --animate-scroll-left: scroll-left 20s linear infinite;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -74,4 +99,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */ 
+} */

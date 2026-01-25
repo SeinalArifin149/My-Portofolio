@@ -1,4 +1,5 @@
 // import React from "react";
+
 const techStack = [
   { name: "Python", icon: "devicon-python-plain colored" },
   { name: "HTML5", icon: "devicon-html5-plain colored" },
@@ -14,26 +15,43 @@ const techStack = [
   { name: "NodeJS", icon: "devicon-nodejs-plain colored" },
   { name: "React", icon: "devicon-react-original colored" },
   { name: "Laravel", icon: "devicon-laravel-original colored" },
-  { name: "Linux", icon: "devicon-linux-plain text-white" }, // Linux penguin biasanya hitam-putih
+  { name: "Linux", icon: "devicon-linux-plain text-white" },
   { name: "Streamlit", icon: "devicon-streamlit-plain colored" },
 ];
 
-// const VISIBLE_COUNT = 10
-
-// const ITEM_HEIGHT = 48
-
 export function Devicon_Left() {
   return (
-    <aside className="col-span-2 flex justify-center">
+    // UBAH: col-span-12 (Mobile Full Width) -> md:col-span-2 (Desktop Sempit)
+    // UBAH: md:justify-start (Biar mepet kiri di desktop, seimbang sama yang kanan)
+    <aside className="col-span-12 md:col-span-2 flex justify-center md:justify-start items-center overflow-hidden">
+      
+      {/* --- DESKTOP VIEW (Vertical Scroll UP) --- */}
       <div
-        className="relative overflow-hidden"
-        style={{ height: 48 * 5 }} // 5 logo kelihatan
+        className="hidden md:block relative overflow-hidden"
+        style={{ height: 48 * 5 }}
       >
+        {/* Pakai 'animate-scroll' (arah default/naik) */}
         <div className="flex flex-col animate-scroll">
           {[...techStack, ...techStack].map((tech, index) => (
             <div
-              key={index}
-              className="h-12 flex flex-col items-center justify-center gap-1"
+              key={`left-desk-${index}`}
+              className="h-12 flex items-center justify-center w-16"
+            >
+              <i className={`${tech.icon} text-3xl`}></i>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* --- MOBILE VIEW (Horizontal Scroll Left) --- */}
+      <div className="md:hidden w-full relative overflow-hidden py-4">
+        {/* Pakai w-max dan animate-scroll-left */}
+        <div className="flex w-max animate-scroll-left">
+          {[...techStack, ...techStack].map((tech, index) => (
+            <div
+              key={`left-mob-${index}`}
+              // Pakai Padding (px-3) menggantikan gap parent
+              className="flex items-center justify-center flex-shrink-0 w-16 px-3"
             >
               <i className={`${tech.icon} text-3xl`}></i>
             </div>
@@ -41,6 +59,5 @@ export function Devicon_Left() {
         </div>
       </div>
     </aside>
-  )
+  );
 }
-

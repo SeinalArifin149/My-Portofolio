@@ -10,9 +10,9 @@ function App() {
   return (
     <Main>
       <Home />
+      <Portofolio />
       <About />
       <Contact />
-      <Portofolio />
     </Main>
   )
 }

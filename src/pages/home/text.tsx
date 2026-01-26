@@ -8,7 +8,9 @@ export function Text() {
             </h1>
           </div>
 
-          <p className="text-gray-300 leading-relaxed text-3xl md:text-base text-">
+          <p className="text-gray-300 leading-relaxed text-sm  sm:text-base 
+  md:text-lg 
+  lg:text-xlg">
             Mahasiswa Teknik Informatika Universitas Trunojoyo Madura, 
             kelahiran Bangkalan, yang memiliki minat dan ketertarikan 
             besar pada bidang pengembangan perangkat lunak, khususnya Website, 

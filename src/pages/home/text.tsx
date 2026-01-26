@@ -10,7 +10,7 @@ export function Text() {
 
           <p className="text-gray-300 leading-relaxed text-sm  sm:text-base 
   md:text-lg 
-  lg:text-xlg">
+  lg:text-lg">
             Mahasiswa Teknik Informatika Universitas Trunojoyo Madura, 
             kelahiran Bangkalan, yang memiliki minat dan ketertarikan 
             besar pada bidang pengembangan perangkat lunak, khususnya Website, 

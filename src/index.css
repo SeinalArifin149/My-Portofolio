@@ -22,12 +22,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 @keyframes scroll-right {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   100% {
     transform: translateX(0);
@@ -38,7 +38,7 @@
   animation: scroll-left 20s linear infinite;
 }
 .animate-scroll-right {
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-right 20s linear infinite;
 }
 
 .animate-scroll-down {

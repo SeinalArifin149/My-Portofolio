@@ -8,7 +8,7 @@ export function Profile() {
             <img 
               src={profileImg}
               alt="Seinal Arifin" 
-              className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+              className="relative w-64 h-80 md:w-80 md:h-[28rem] rounded-[2.5rem] overflow-hidden"
             />
           </div>
         </div>

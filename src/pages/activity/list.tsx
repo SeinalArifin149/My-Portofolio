@@ -3,53 +3,36 @@ import { ActivityCard } from "../../components";
 
 const portfolios = [
 	{
-		title: "VPN Mobile App",
-		category: "Mobile App",
+		title: "Pembina dan Pramuka Aktif",
+		category: "Scout (Pramuka)",
 		image: "/img/vpn.png",
 	},
 	{
-		title: "Streaming Mobile App",
-		category: "Mobile App",
+		title: "Designer Or UI/UX",
+		category: "Designer",
 		image: "/img/stream.png",
 	},
 	{
-		title: "Creative Digital Agency",
-		category: "Landing Page",
+		title: "Organisasi",
+		category: "Organisasi",
 		image: "/img/agency.png",
 	},
 	{
-		title: "Podcast Mobile App",
+		title: "Kaggle Kompetisi",
 		category: "Mobile App",
 		image: "/img/podcast.png",
 	},
 	{
-		title: "Multimedia Design Platform",
-		category: "Web Design",
+		title: "Service Hp,Upgrade Laptop",
+		category: "Hardware Service",
 		image: "/img/multimedia.png",
 	},
 	{
-		title: "Parking Mobile App",
+		title: "Workshop / Bootcamp",
 		category: "Mobile App",
 		image: "/img/parking.png",
 	},
 ];
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ActivityCard 
-              title="Project 1"
-              category="Web Development"
-              image="/path/to/image.jpg"
-            />
-            <ActivityCard 
-              title="Project 2"
-              category="AI/ML"
-              image="/path/to/image2.jpg"
-            />
-            <ActivityCard 
-              title="Project 3"
-              category="Mobile App"
-              image="/path/to/image3.jpg"
-            />
-          </div>
 
 export default function ActifytySection() {
 	return (

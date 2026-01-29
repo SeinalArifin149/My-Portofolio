@@ -7,9 +7,13 @@ type MainProps = {
 
 export function Main({ children }: MainProps) {
   return (
-    <div className="bg pt-27">
-      <Navbar />
-      {children}
-    </div>
+   <div
+  className="min-h-screen pt-27 bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/Background.png')" }}
+>
+  <Navbar />
+  {children}
+</div>
+
   )
 }

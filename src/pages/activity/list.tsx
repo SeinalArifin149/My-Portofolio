@@ -1,4 +1,5 @@
-import { ActivityCard } from "./card";
+// import { ActivityCard } from ",,/components/Activti";
+import { ActivityCard } from "../../components";
 
 const portfolios = [
 	{
@@ -32,16 +33,28 @@ const portfolios = [
 		image: "/img/parking.png",
 	},
 ];
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ActivityCard 
+              title="Project 1"
+              category="Web Development"
+              image="/path/to/image.jpg"
+            />
+            <ActivityCard 
+              title="Project 2"
+              category="AI/ML"
+              image="/path/to/image2.jpg"
+            />
+            <ActivityCard 
+              title="Project 3"
+              category="Mobile App"
+              image="/path/to/image3.jpg"
+            />
+          </div>
 
 export default function ActifytySection() {
 	return (
 		<section className="bg-[#050b16] py-20">
 			<div className="max-w-6xl mx-auto px-6">
-				{/* Judul */}
-				<h2 className="text-white text-3xl font-bold mb-10">
-					Our Portfolio
-				</h2>
-
 				{/* GRID */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{portfolios.map((item, index) => (

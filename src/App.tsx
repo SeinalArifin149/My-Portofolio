@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import 'devicon/devicon.min.css'
-import { Home, About, Contact, Portofolio, Activity } from './pages'
+import { Home, Contact, Portofolio, Activity } from './pages'
 import { Main } from './components'
 
 function App() {

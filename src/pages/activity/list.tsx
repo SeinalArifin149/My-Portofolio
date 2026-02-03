@@ -1,5 +1,6 @@
 // import { ActivityCard } from ",,/components/Activti";
 import { ActivityCard } from "../../components";
+import designerImg from "/img/Designer.jpg";
 
 const portfolios = [
 	{
@@ -10,7 +11,7 @@ const portfolios = [
 	{
 		title: "Designer Or UI/UX",
 		category: "Designer",
-		image: "/img/stream.png",
+		image: designerImg,
 	},
 	{
 		title: "Organisasi",

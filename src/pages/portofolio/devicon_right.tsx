@@ -1,4 +1,5 @@
 // import React from "react";
+import { motion } from "framer-motion"
 
 const techStack = [
   { name: "Streamlit", icon: "devicon-streamlit-plain colored" },
@@ -21,13 +22,14 @@ const techStack = [
 
 export function Devicon_Right() {
   return (
-    // FIX UTAMA: 
-    // 1. col-span-12 (Default/Mobile) -> Biar full width di HP
-    // 2. md:col-span-2 (Desktop) -> Biar balik jadi kolom kecil di kanan
-    // 3. md:justify-end -> Biar di desktop mepet kanan
-    <aside className="col-span-12 md:col-span-2 flex justify-center md:justify-end overflow-hidden">
-      
-      {/* --- DESKTOP VIEW (Vertical Scroll Down) --- */}
+    <motion.aside
+      className="col-span-12 md:col-span-2 flex justify-center md:justify-end overflow-hidden"
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      {/* Desktop: Vertical Scroll */}
       <div
         className="hidden md:block relative overflow-hidden"
         style={{ height: 48 * 5 }}
@@ -44,9 +46,9 @@ export function Devicon_Right() {
         </div>
       </div>
 
-      {/* --- MOBILE VIEW (Horizontal Scroll Left) --- */}
+      {/* Mobile: Horizontal Scroll */}
       <div className="md:hidden relative overflow-hidden w-full h-12">
-        <div className="flex w-max animate-scroll-left"> 
+        <div className="flex w-max animate-scroll-left">
           {[...techStack, ...techStack].map((tech, index) => (
             <div
               key={`mob-right-${index}`}
@@ -57,6 +59,6 @@ export function Devicon_Right() {
           ))}
         </div>
       </div>
-    </aside>
+    </motion.aside>
   )
 }

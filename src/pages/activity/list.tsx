@@ -1,12 +1,15 @@
 // import { ActivityCard } from ",,/components/Activti";
 import { ActivityCard } from "../../components";
-import designerImg from "/img/Designer.jpg";
+import designerImg from "./img/Designer.jpg";
+import ScoutImg from "./img/Scout.jpeg";
+import KaggleImg from "./img/Kaggle.jpeg";
+import HardwareImg from "./img/Hardware.jpeg";
 
 const portfolios = [
 	{
 		title: "Pembina dan Pramuka Aktif",
 		category: "Scout (Pramuka)",
-		image: "/img/vpn.png",
+		image: ScoutImg,
 	},
 	{
 		title: "Designer Or UI/UX",
@@ -21,12 +24,12 @@ const portfolios = [
 	{
 		title: "Kaggle Kompetisi",
 		category: "Mobile App",
-		image: "/img/podcast.png",
+		image: KaggleImg,
 	},
 	{
 		title: "Service Hp,Upgrade Laptop",
 		category: "Hardware Service",
-		image: "/img/multimedia.png",
+		image: HardwareImg,
 	},
 	{
 		title: "Workshop / Bootcamp",

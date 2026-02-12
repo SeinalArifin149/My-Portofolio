@@ -32,4 +32,7 @@
 
   /* Class: animate-scroll-left */
   --animate-scroll-left: scroll-left 15s linear infinite;
+
+  --animate-spin-slow: spin 3s linear infinite;
+
 }

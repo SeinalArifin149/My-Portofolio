@@ -1,5 +1,7 @@
 import { useState } from "react"
-import Logo from "./logo.png"
+import LogoZayn from "./logo"
+// import Logo from "./logo.png"
+// import Reaksi from "../../../assets/react.svg"
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
@@ -12,11 +14,14 @@ export function Navbar() {
       min-h-[96px]
       flex items-center justify-between
     ">
+      <LogoZayn/>
+      {/* <img src={Reaksi} alt="Ini lugu reaksi aowk" className="spinlogo" />
       <img
         src={Logo}
         alt="Seinal Logo"
         className="h-14 md:h-20 w-auto object-contain"
-      />
+      /> */}
+
 
       <button
         className="md:hidden text-white text-3xl"

@@ -1,12 +1,13 @@
 export default function LogoZayn() {
   return (
-    <div className="flex items-center text-2xl font-bold font-mono text-white tracking-tight">
-      {"<? Z"}
+    <div className="flex items-center text-2xl font-bold font-bungee text-cyan-500 tracking-tight
+">
+      {"< Z"}
 
       <span className="mx-0.5 animate-spin-slow">
         <svg
           viewBox="0 0 841.9 595.3"
-          className="w-7 h-7 text-cyan-400"
+          className="w-9 h-7 text-cyan-400"
           fill="none"
           stroke="currentColor"
           strokeWidth="30"

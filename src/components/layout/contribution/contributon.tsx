@@ -1,21 +1,42 @@
 import { GitHubCalendar } from "react-github-calendar";
+import { motion } from "framer-motion";
 
 export function GithubActivity() {
   return (
-    <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
-      <h2 className="text-2xl font-bold text-white mb-4">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      whileHover={{ scale: 1.02 }}
+      className="bg-gradient-to-br from-gray-900 to-gray-800 
+                 p-8 rounded-3xl shadow-2xl 
+                 border border-gray-700 
+                 transition duration-300"
+    >
+      <motion.h2
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="text-2xl font-bold text-white mb-6 text-center"
+      >
         My GitHub Activity
-      </h2>
+      </motion.h2>
 
-      <div className="overflow-x-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+        className="overflow-x-auto text-white"
+      >
         <GitHubCalendar
           username="seinalarifin149"
-          blockSize={15}
+          blockSize={17}
           blockMargin={5}
-          fontSize={14}
+          fontSize={15}
           colorScheme="dark"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

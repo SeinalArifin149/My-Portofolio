@@ -10,6 +10,7 @@ export function Activity() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="container mx-auto px-6 py-10"
+            id="activity"
         >
             <motion.h2 
                 initial={{ y: -20, opacity: 0 }}

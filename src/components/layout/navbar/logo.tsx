@@ -21,7 +21,7 @@ export default function LogoZayn() {
         </svg>
       </span>
 
-      {"yn >"}
+      {"yn />"}
     </div>
   );
 }

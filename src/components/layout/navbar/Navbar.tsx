@@ -44,7 +44,7 @@ export function Navbar() {
           md:hidden
         ">
           <ul className="flex flex-col gap-4 px-6 py-4 text-gray-100">
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Portofolio</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>

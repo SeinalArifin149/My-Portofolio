@@ -1,6 +1,6 @@
 import { GitHubCalendar } from "react-github-calendar";
 
-export default function GithubActivity() {
+export function GithubActivity() {
   return (
     <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
       <h2 className="text-2xl font-bold text-white mb-4">
@@ -9,7 +9,7 @@ export default function GithubActivity() {
 
       <div className="overflow-x-auto">
         <GitHubCalendar
-          username="USERNAME_KAMU"
+          username="seinalarifin149"
           blockSize={15}
           blockMargin={5}
           fontSize={14}

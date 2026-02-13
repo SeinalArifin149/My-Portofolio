@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"; // Import motion
 import ActifytySection from "./list";
 import { ProfileQuotes, TextQuotes } from "./quotes";
+import { GithubActivity } from "../../components";
 
 export function Activity() {
     return (
@@ -20,6 +21,7 @@ export function Activity() {
             </motion.h2>
             
             <ActifytySection />
+            <GithubActivity />
 
             {/* Quotes */}
             <motion.div 

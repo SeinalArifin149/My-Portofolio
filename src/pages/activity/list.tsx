@@ -4,14 +4,16 @@ import designerImg from "./img/Designer.jpg";
 import ScoutImg from "./img/Scout.jpeg";
 import KaggleImg from "./img/Kaggle.jpeg";
 import HardwareImg from "./img/Hardware.jpeg";
+import DataAnalysis from "./img/analysis.jpeg";
+import Competition from "./img/competition.jpeg";
 
 const portfolios = [
     { title: "Pembina dan Pramuka Aktif", category: "Scout (Pramuka)", image: ScoutImg },
     { title: "Designer Or UI/UX", category: "Designer", image: designerImg },
-    { title: "Organisasi", category: "Organisasi", image: "/img/agency.png" },
+    { title: "Competition", category: "Conpetition", image: Competition },
     { title: "Kaggle Kompetisi", category: "Mobile App", image: KaggleImg },
     { title: "Service Hp,Upgrade Laptop", category: "Hardware Service", image: HardwareImg },
-    { title: "Workshop / Bootcamp", category: "Mobile App", image: "/img/parking.png" },
+    { title: "Data Analysis", category: "Data", image: DataAnalysis },
 ];
 
 // Konfigurasi animasi container (induk)

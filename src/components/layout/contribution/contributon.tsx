@@ -6,13 +6,15 @@ export function GithubActivity() {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
       viewport={{ once: true }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.03,
+  y: -5,
+  transition: { type: "spring", stiffness: 250 } }}
       className="bg-gradient-to-br from-gray-900 to-gray-800 
                  p-8 rounded-3xl shadow-2xl 
                  border border-gray-700 
-                 transition duration-300"
+                 transition duration-300 py-4"
     >
       <motion.h2
         initial={{ opacity: 0 }}
@@ -27,7 +29,7 @@ export function GithubActivity() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
-        className="overflow-x-auto text-white"
+        className="overflow-x-auto text-white "
       >
         <GitHubCalendar
           username="seinalarifin149"

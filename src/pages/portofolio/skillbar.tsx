@@ -3,7 +3,7 @@ export function SkillBar() {
     <div
       className="
         col-span-12
-        md:col-span-3 md:col-start-7
+        md:col-span-3 md:col-start-8
         flex flex-col gap-4
       "
     >

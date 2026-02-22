@@ -7,6 +7,7 @@ export function SkillBar() {
         flex flex-col gap-4
       "
     >
+      {/* cuman ngau githubaowka */}
       <h3 className="text-lg md:text-xl text-gray-200 font-semibold text-center">
         Skill Focus
       </h3>

@@ -1,12 +1,19 @@
 import { motion } from "framer-motion"; // Import motion
 import { ActivityCard } from "../../components";
 import BpmImg from "./img/bpm.png";
+import AbdImg from "./img/ABD.png"
 const portfolios = [
     { 
         title: "Prediksi BPM Musik 2025", 
         category: "Kaggle Competition", 
         image: BpmImg,
         link: "https://predictthe-bpmofmusicwithensemble-learning-hiaqlzclnappf6xlycw.streamlit.app/"
+    },
+    { 
+        title: "Analisis komentar Aplikasi Tiktok 2025", 
+        category: "Analisis Big Data", 
+        image: AbdImg,
+        link: "https://big-data-analysisreviewapptiktokcihuy.streamlit.app/"
     },
    
 ];

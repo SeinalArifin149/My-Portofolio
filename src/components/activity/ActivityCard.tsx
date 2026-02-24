@@ -7,17 +7,22 @@ interface ActivityCardProps {
 
 export function ActivityCard({ title, category, image, link }: ActivityCardProps) {
   return (
-    <div className="
-      bg-[#0b1220]
-      rounded-xl
-      p-4
-      shadow-lg shadow-black/40
-      hover:scale-[1.03]
-      transition duration-300
-    ">
-      <a href={link }></a>
+    <a 
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        block
+        bg-[#0b1220]
+        rounded-xl
+        p-4
+        shadow-lg shadow-black/40
+        hover:scale-[1.03]
+        transition duration-300
+      "
+    >
       <img
-        src={image}
+        src={image} 
         alt={title}
         className="rounded-lg mb-4 w-full h-48 object-cover"
       />
@@ -29,6 +34,6 @@ export function ActivityCard({ title, category, image, link }: ActivityCardProps
       <p className="text-slate-400 text-sm">
         {category}
       </p>
-    </div>
+    </a>
   );
 }

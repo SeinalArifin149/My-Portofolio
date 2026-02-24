@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import 'devicon/devicon.min.css'
-import { Home, Contact, Portofolio, Activity } from './pages'
+import { Home, Contact, Portofolio, Activity, Project} from './pages'
 import { Main } from './components'
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
       <Home />
       <Portofolio />
       <Activity />
+      <Project />
+
       <Contact />
     </Main>
   )

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"; // Import motion
-import ActifytySection from "./list";
+import ProjectSection from "./list";
 // import { ProfileQuotes, TextQuotes } from "./quotes";
-import { GithubActivity } from "../../components";
+// import { GithubActivity } from "../../components";
 
-export function Activity() {
+export function Project() {
     return (
         <motion.div 
             initial={{ opacity: 0 }}
@@ -18,11 +18,11 @@ export function Activity() {
                 transition={{ delay: 0.2 }}
                 className="text-white text-3xl font-bold mb-8 text-center"
             >
-                My Activities
+                My Project
             </motion.h2>
             
-            <ActifytySection />
-            <GithubActivity />
+            <ProjectSection />
+            {/* <GithubActivity /> */}
 
             {/* Quotes */}
             <motion.div 

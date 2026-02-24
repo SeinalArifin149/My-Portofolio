@@ -5,4 +5,5 @@ export { Home } from './home/home'
 export { Contact} from './contact/contact'
 export { Activity } from './activity/activity'
 export { Portofolio } from './portofolio/portofolio'
+export { Project } from './project/project'
 

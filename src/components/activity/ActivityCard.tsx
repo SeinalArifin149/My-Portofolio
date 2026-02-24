@@ -2,9 +2,10 @@ interface ActivityCardProps {
   title: string;
   category: string;
   image: string;
+  link : string;
 }
 
-export function ActivityCard({ title, category, image }: ActivityCardProps) {
+export function ActivityCard({ title, category, image, link }: ActivityCardProps) {
   return (
     <div className="
       bg-[#0b1220]
@@ -14,6 +15,7 @@ export function ActivityCard({ title, category, image }: ActivityCardProps) {
       hover:scale-[1.03]
       transition duration-300
     ">
+      <a href={link }></a>
       <img
         src={image}
         alt={title}

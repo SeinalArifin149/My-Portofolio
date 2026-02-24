@@ -1,49 +1,14 @@
 import { motion } from "framer-motion"; // Import motion
 import { ActivityCard } from "../../components";
-import designerImg from "./img/Designer.jpg";
-import ScoutImg from "./img/Scout.jpeg";
-import KaggleImg from "./img/Kaggle.jpeg";
-import HardwareImg from "./img/Hardware.jpeg";
-import DataAnalysis from "./img/analysis.jpeg";
-import Competition from "./img/competition.jpeg";
-
+import BpmImg from "./img/bpm.png";
 const portfolios = [
     { 
-        title: "Pembina dan Pramuka Aktif", 
-        category: "Scout (Pramuka)", 
-        image: ScoutImg,
-        link: "https://instagram.com/yourlink"
+        title: "Prediksi BPM Musik 2025", 
+        category: "Kaggle Competition", 
+        image: BpmImg,
+        link: "https://predictthe-bpmofmusicwithensemble-learning-hiaqlzclnappf6xlycw.streamlit.app/"
     },
-    { 
-        title: "Designer Or UI/UX", 
-        category: "Designer", 
-        image: designerImg,
-        link: "https://dribbble.com/yourprofile"
-    },
-    { 
-        title: "Competition", 
-        category: "Competition", 
-        image: Competition,
-        link: "https://github.com/username/project"
-    },
-    { 
-        title: "Kaggle Kompetisi", 
-        category: "Mobile App", 
-        image: KaggleImg,
-        link: "https://kaggle.com/username"
-    },
-    { 
-        title: "Service Hp, Upgrade Laptop", 
-        category: "Hardware Service", 
-        image: HardwareImg,
-        link: "#"
-    },
-    { 
-        title: "Data Analysis", 
-        category: "Data", 
-        image: DataAnalysis,
-        link: "https://github.com/username/data-project"
-    },
+   
 ];
 
 // Konfigurasi animasi container (induk)
@@ -67,7 +32,7 @@ const itemVariants = {
     },
 };
 
-export default function ActifytySection() {
+export default function ProjectSection() {
     return (
         <section className="bg-[#050b16] py-20">
             <div className="max-w-6xl mx-auto px-6">

@@ -8,12 +8,42 @@ import DataAnalysis from "./img/analysis.jpeg";
 import Competition from "./img/competition.jpeg";
 
 const portfolios = [
-    { title: "Pembina dan Pramuka Aktif", category: "Scout (Pramuka)", image: ScoutImg },
-    { title: "Designer Or UI/UX", category: "Designer", image: designerImg },
-    { title: "Competition", category: "Conpetition", image: Competition },
-    { title: "Kaggle Kompetisi", category: "Mobile App", image: KaggleImg },
-    { title: "Service Hp,Upgrade Laptop", category: "Hardware Service", image: HardwareImg },
-    { title: "Data Analysis", category: "Data", image: DataAnalysis },
+    { 
+        title: "Pembina dan Pramuka Aktif", 
+        category: "Scout (Pramuka)", 
+        image: ScoutImg,
+        link: "https://instagram.com/yourlink"
+    },
+    { 
+        title: "Designer Or UI/UX", 
+        category: "Designer", 
+        image: designerImg,
+        link: "https://dribbble.com/yourprofile"
+    },
+    { 
+        title: "Competition", 
+        category: "Competition", 
+        image: Competition,
+        link: "https://github.com/username/project"
+    },
+    { 
+        title: "Kaggle Kompetisi", 
+        category: "Mobile App", 
+        image: KaggleImg,
+        link: "https://kaggle.com/username"
+    },
+    { 
+        title: "Service Hp, Upgrade Laptop", 
+        category: "Hardware Service", 
+        image: HardwareImg,
+        link: "#"
+    },
+    { 
+        title: "Data Analysis", 
+        category: "Data", 
+        image: DataAnalysis,
+        link: "https://github.com/username/data-project"
+    },
 ];
 
 // Konfigurasi animasi container (induk)

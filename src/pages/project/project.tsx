@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"; // Import motion
 import ActifytySection from "./list";
-import { ProfileQuotes, TextQuotes } from "./quotes";
+// import { ProfileQuotes, TextQuotes } from "./quotes";
 import { GithubActivity } from "../../components";
 
 export function Activity() {
@@ -33,8 +33,8 @@ export function Activity() {
                 className="min-h-screen px-6 py-20"
             >
                 <div className="grid grid-cols-12 gap-6">
-                    <ProfileQuotes />
-                    <TextQuotes />
+                    {/* <ProfileQuotes />
+                    <TextQuotes /> */}
                 </div>
             </motion.div>
         </motion.div>

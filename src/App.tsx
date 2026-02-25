@@ -11,8 +11,8 @@ function App() {
     <Main>
       <Home />
       <Portofolio />
-      <Activity />
       <Project />
+      <Activity />
 
       <Contact />
     </Main>

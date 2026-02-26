@@ -13,7 +13,6 @@ function App() {
       <Portofolio />
       <Project />
       <Activity />
-
       <Contact />
     </Main>
   )

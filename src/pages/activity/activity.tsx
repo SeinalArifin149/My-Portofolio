@@ -9,9 +9,10 @@ export function Activity() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="container mx-auto px-6 py-10"
+            className="container mx-auto px-6 py-8"
             id="activity"
         >
+            <GithubActivity />
             <motion.h2 
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -22,7 +23,6 @@ export function Activity() {
             </motion.h2>
             
             <ActifytySection />
-            <GithubActivity />
 
             {/* Quotes */}
             <motion.div 

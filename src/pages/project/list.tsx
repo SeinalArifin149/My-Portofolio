@@ -41,7 +41,7 @@ const itemVariants = {
 
 export default function ProjectSection() {
     return (
-        <section className="bg-[#050b16] py-20">
+        <section className="bg-[#050b16] py-5">
             <div className="max-w-6xl mx-auto px-6">
                 {/* GRID RESPONSIVE */}
                 <motion.div 

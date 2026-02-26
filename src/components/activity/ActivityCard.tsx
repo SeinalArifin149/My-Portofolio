@@ -2,25 +2,12 @@ interface ActivityCardProps {
   title: string;
   category: string;
   image: string;
-  link : string;
+  link?: string;
 }
 
 export function ActivityCard({ title, category, image, link }: ActivityCardProps) {
-  return (
-    <a 
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        block
-        bg-[#0b1220]
-        rounded-xl
-        p-4
-        shadow-lg shadow-black/40
-        hover:scale-[1.03]
-        transition duration-300
-      "
-    >
+  const content = (
+    <>
       <img
         src={image} 
         alt={title}
@@ -34,6 +21,26 @@ export function ActivityCard({ title, category, image, link }: ActivityCardProps
       <p className="text-slate-400 text-sm">
         {category}
       </p>
-    </a>
+    </>
   );
+
+  const className = `
+    block
+    bg-[#0b1220]
+    rounded-xl
+    p-4
+    shadow-lg shadow-black/40
+    hover:scale-[1.03]
+    transition duration-300
+  `;
+
+  if (link) {
+    return (
+      <a href={link} target="_blank" rel="noopener noreferrer" className={className}>
+        {content}
+      </a>
+    );
+  }
+
+  return <div className={className}>{content}</div>;
 }

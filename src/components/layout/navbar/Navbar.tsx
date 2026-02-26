@@ -13,7 +13,7 @@ const menuNavbar = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const handleScroll = (id) => {
+  const handleScroll = (id:string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({
@@ -31,7 +31,8 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 w-full z-50
                  backdrop-blur-md
-                 px-6 min-h-[96px]
+                 px-6 
+                 min-h-[96px]
                  flex items-center justify-between"
     >
       <LogoZayn />

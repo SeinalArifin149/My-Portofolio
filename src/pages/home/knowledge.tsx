@@ -27,6 +27,7 @@ export function Knowledge() {
       gap-6 
       lg:gap-16 
       order-3
+      px-5
     ">
       <StatItem
         label={

@@ -2,6 +2,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LogoZayn from "./logo";
 
+const menuNavbar = [
+  { label: "Home", id: "home" },
+  { label: "Portofolio", id: "portofolio" },
+  { label: "My Project", id: "project" },
+  { label: "My Activity", id: "activity" },
+  { label: "Contact", id: "contact" },
+];
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -17,7 +25,7 @@ export function Navbar() {
     >
       <LogoZayn />
 
-      {/* Hamburger */}
+      {/* Hamburger Button */}
       <motion.button
         whileTap={{ scale: 0.9 }}
         animate={{ rotate: open ? 90 : 0 }}
@@ -29,15 +37,18 @@ export function Navbar() {
       </motion.button>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-6 text-gray-100">
-        {["Home", "Portofolio", "Contact", "About"].map((item) => (
+      <ul className="hidden md:flex gap-8 text-gray-100 font-medium">
+        {menuNavbar.map((item) => (
           <motion.li
-            key={item}
+            key={item.id}
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <a className="hover:text-blue-500 transition" href="#">
-              {item}
+            <a
+              href={`#${item.id}`}
+              className="hover:text-blue-500 transition duration-300"
+            >
+              {item.label}
             </a>
           </motion.li>
         ))}
@@ -52,7 +63,7 @@ export function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4 }}
             className="absolute top-full left-0 w-full
-                       bg-black/80 backdrop-blur-md
+                       bg-black/90 backdrop-blur-md
                        md:hidden overflow-hidden"
           >
             <motion.ul
@@ -68,18 +79,22 @@ export function Navbar() {
                   },
                 },
               }}
-              className="flex flex-col gap-4 px-6 py-6 text-gray-100"
+              className="flex flex-col gap-6 px-6 py-6 text-gray-100 font-medium"
             >
-              {["home", "portofolio", "activity"].map((item) => (
+              {menuNavbar.map((item) => (
                 <motion.li
-                  key={item}
+                  key={item.id}
                   variants={{
                     hidden: { y: -10, opacity: 0 },
                     show: { y: 0, opacity: 1 },
                   }}
                 >
-                  <a href="#" onClick={() => setOpen(false)}>
-                    {item}
+                  <a
+                    href={`#${item.id}`}
+                    onClick={() => setOpen(false)}
+                    className="block hover:text-blue-500 transition"
+                  >
+                    {item.label}
                   </a>
                 </motion.li>
               ))}

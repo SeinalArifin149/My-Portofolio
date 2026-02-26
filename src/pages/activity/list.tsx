@@ -2,7 +2,7 @@ import { motion } from "framer-motion"; // Import motion
 import { ActivityCard } from "../../components";
 import designerImg from "./img/Designer.jpg";
 import ScoutImg from "./img/Scout.jpeg";
-import KaggleImg from "./img/Kaggle.jpeg";
+import organisasiImg from "./img/organisasi.jpeg";
 import HardwareImg from "./img/Hardware.jpeg";
 import DataAnalysis from "./img/analysis.jpeg";
 import Competition from "./img/competition.jpeg";
@@ -27,9 +27,9 @@ const portfolios = [
     link: "#",
   },
   {
-    title: "Kaggle Kompetisi",
-    category: "Data Science",
-    image: KaggleImg,
+    title: "Organda,Pramuka,Organisasi Islam",
+    category: "Organisasi",
+    image: organisasiImg,
     link: "#",
   },
   {

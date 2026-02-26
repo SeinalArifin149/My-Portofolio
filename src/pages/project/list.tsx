@@ -2,6 +2,7 @@ import { motion } from "framer-motion"; // Import motion
 import { ActivityCard } from "../../components";
 import BpmImg from "./img/bpm.png";
 import AbdImg from "./img/ABD.png"
+import SandiImg from "./img/sandi.png"
 const portfolios = [
     { 
         title: "Prediksi BPM Musik 2025", 
@@ -14,6 +15,12 @@ const portfolios = [
         category: "Analisis Big Data", 
         image: AbdImg,
         link: "https://big-data-analysisreviewapptiktokcihuy.streamlit.app/"
+    },
+    { 
+        title: "Sistem Sandi Az sederhana", 
+        category: "Sandi Pramuka", 
+        image: SandiImg,
+        link: "https://prabaya-sandi-az.vercel.app"
     },
    
 ];

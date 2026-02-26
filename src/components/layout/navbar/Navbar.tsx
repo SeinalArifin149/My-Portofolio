@@ -13,6 +13,17 @@ const menuNavbar = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    setOpen(false);
+  };
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
@@ -25,7 +36,7 @@ export function Navbar() {
     >
       <LogoZayn />
 
-      {/* Hamburger Button */}
+      {/* Hamburger */}
       <motion.button
         whileTap={{ scale: 0.9 }}
         animate={{ rotate: open ? 90 : 0 }}
@@ -42,14 +53,15 @@ export function Navbar() {
           <motion.li
             key={item.id}
             whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <a
-              href={`#${item.id}`}
+            <button
+              onClick={() => handleScroll(item.id)}
               className="hover:text-blue-500 transition duration-300"
             >
               {item.label}
-            </a>
+            </button>
           </motion.li>
         ))}
       </ul>
@@ -74,9 +86,7 @@ export function Navbar() {
                 hidden: { opacity: 0 },
                 show: {
                   opacity: 1,
-                  transition: {
-                    staggerChildren: 0.1,
-                  },
+                  transition: { staggerChildren: 0.1 },
                 },
               }}
               className="flex flex-col gap-6 px-6 py-6 text-gray-100 font-medium"
@@ -89,13 +99,12 @@ export function Navbar() {
                     show: { y: 0, opacity: 1 },
                   }}
                 >
-                  <a
-                    href={`#${item.id}`}
-                    onClick={() => setOpen(false)}
+                  <button
+                    onClick={() => handleScroll(item.id)}
                     className="block hover:text-blue-500 transition"
                   >
                     {item.label}
-                  </a>
+                  </button>
                 </motion.li>
               ))}
             </motion.ul>

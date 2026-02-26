@@ -1,4 +1,4 @@
-import imgQutes from "../home/profile.png"
+import imgQutes from "./profile.png"
 export function ProfileQuotes() {
     return (
       <div className="col-span-12 md:col-span-3 bg-gray-800 roundde-xl p-6 text-center">

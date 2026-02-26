@@ -8,7 +8,7 @@ export function Profile() {
             <img 
               src={profileImg}
               alt="Seinal Arifin" 
-              className="relative w-100 h-80 md:w-80 md:h-[28rem] rounded-[2.5rem] overflow-hidden"
+              className="relative w-100 h-90 md:w-80 md:h-[28rem] rounded-[2.5rem] overflow-hidden"
             />
           </div>
         </div>

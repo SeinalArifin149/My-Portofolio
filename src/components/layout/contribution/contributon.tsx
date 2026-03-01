@@ -37,6 +37,7 @@ export function GithubActivity() {
           blockMargin={5}
           fontSize={15}
           colorScheme="dark"
+          year={2026}
         />
       </motion.div>
     </motion.div>

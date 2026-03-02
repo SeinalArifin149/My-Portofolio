@@ -66,6 +66,17 @@ export function SkillBar() {
                 </div>
               </td>
             </tr>
+
+            <tr className="hover:bg-white/5 transition">
+              <td className="px-4 py-3">OnGoing</td>
+              <td className="px-4 py-3">
+                <div className="flex justify-center gap-3 text-xl">
+                  <i className="devicon-flutter-plain colored"></i>
+                  <i className="devicon-kotlin-plain colored"></i>
+                </div>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       </div>

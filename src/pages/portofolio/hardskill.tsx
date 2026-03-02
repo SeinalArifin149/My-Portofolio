@@ -19,9 +19,10 @@ export function HardSkill() {
       </h2>
 
       <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-        Profesional IT dengan keahlian Full-stack Web Development (UI Responsif & Sistem Efisien),
-        Data Science (Data Mining & Analisis Strategis),
-        serta Hardware Service (Troubleshooting & Perbaikan Komprehensif)
+        Profesional IT dengan keahlian Full-stack Web Development (UI responsif & sistem efisien), 
+  Data Science (data mining & analisis berbasis insight), 
+  serta Hardware Service (troubleshooting & optimasi perangkat). 
+  Berfokus pada solusi yang terstruktur, efektif, dan berdampak.
       </p>
     </div>
   )

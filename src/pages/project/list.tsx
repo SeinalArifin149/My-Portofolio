@@ -3,6 +3,7 @@ import { ActivityCard } from "../../components";
 import BpmImg from "./img/bpm.png";
 import AbdImg from "./img/ABD.png"
 import SandiImg from "./img/sandi.png"
+import ChatImg from "./img/chatbot.png"
 const portfolios = [
     { 
         title: "Prediksi BPM Musik 2025", 
@@ -21,6 +22,12 @@ const portfolios = [
         category: "Sandi Pramuka", 
         image: SandiImg,
         link: "https://prabaya-sandi-az.vercel.app"
+    },
+    { 
+        title: "Sistem Chatbot berbasis Whatsapp", 
+        category: "Chatbot AI", 
+        image: ChatImg,
+        link: "https://wa.me/+6289676013629"
     },
    
 ];

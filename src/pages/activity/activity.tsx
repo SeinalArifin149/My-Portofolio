@@ -12,7 +12,6 @@ export function Activity() {
             className="container mx-auto px-6 py-8"
             id="activity"
         >
-            <GithubActivity />
             <motion.h2 
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -21,8 +20,9 @@ export function Activity() {
             >
                 My Activities
             </motion.h2>
-            
             <ActifytySection />
+            <GithubActivity />
+            
 
             {/* Quotes */}
             <motion.div 
@@ -30,7 +30,7 @@ export function Activity() {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.3 }}
-                className="min-h-screen px-6 py-20"
+                className="min-h-screen px-6 py-10"
             >
                 <div className="grid grid-cols-12 gap-6">
                     <ProfileQuotes />

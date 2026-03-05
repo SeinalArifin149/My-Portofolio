@@ -1,16 +1,16 @@
 export function Text_Contact() {
   return (
-    <div className="grid grid-cols-1 items-center">
-      
-      <div className="flex justify-center">
-        <p className="text-white text-5xl text-center">
-          Want to make awesome and impactful Product?
-        </p>
-      </div>
+    <div className="space-y-4 text-center md:text-left">
 
-      {/* <div className="flex justify-end pr-8">
-        <img src="./anim.png" alt="profile" className="w-64 md:w-80" />
-      </div> */}
+      <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+        Want to build
+        <span className="text-blue-400"> impactful </span>
+        digital products?
+      </h2>
+
+      <p className="text-gray-400 text-base md:text-lg">
+        I'm open for collaboration, freelance projects, and innovative ideas.
+      </p>
 
     </div>
   );

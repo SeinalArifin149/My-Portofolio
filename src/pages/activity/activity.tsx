@@ -3,6 +3,7 @@ import ActifytySection from "./list";
 import { ProfileQuotes, TextQuotes } from "./quotes";
 import { GithubActivity } from "../../components";
 
+
 export function Activity() {
     return (
         <motion.div 

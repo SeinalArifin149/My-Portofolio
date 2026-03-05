@@ -4,8 +4,8 @@ import { Text_Contact } from "./text"
 export function Contact() {
     return(
         <div className="">
-            <Profile_Contact/>
-            <Text_Contact/>
+            {/* <Profile_Contact/>
+            <Text_Contact/> */}
 
         {/* <Navbar /> */}
       {/* <h1 className="text-white text-3xl">Ini halaman Hkontak</h1>

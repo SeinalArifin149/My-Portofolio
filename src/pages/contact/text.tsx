@@ -1,9 +1,7 @@
 export function Text_Contact() {
     return (
-    <p>
-        Want to make awesome and impactful Product?
-    </p>
-
-    )
-    
+        <p className="text-white">
+            Want to make awesome and impactful Product?
+        </p>
+    );
 }

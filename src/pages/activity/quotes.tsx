@@ -1,7 +1,7 @@
 import imgQutes from "./profile.png"
 export function ProfileQuotes() {
     return (
-      <div className="col-span-12 md:col-span-3 bg-gray-800 roundde-xl p-6 text-center">
+      <div className="col-span-12 md:col-span-3 bg-gray-800 rounded-xl p-6 text-center">
         <img 
         src={imgQutes}
         alt="Seinal Quotes" />

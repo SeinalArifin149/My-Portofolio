@@ -31,7 +31,7 @@ export function Activity() {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.3 }}
-                className="min-h-screen px-6 py-10"
+                className=" px-6 py-10"
             >
                 <div className="grid grid-cols-12 gap-6">
                     <ProfileQuotes />

@@ -8,13 +8,12 @@ type MainProps = {
 
 export function Main({ children }: MainProps) {
   return (
-   <div
-      className="min-h-screen pt-27 bg-cover bg-center bg-no-repeat"
+    <div
+      className="min-h-screen pt-27 bg-cover bg-center bg-no-repeat w-full overflow-x-hidden"
       style={{ backgroundImage: `url(${Background})` }}
     >
-  <Navbar />
-  {children}
-</div>
-
+      <Navbar />
+      {children}
+    </div>
   )
 }

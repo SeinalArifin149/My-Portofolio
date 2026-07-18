@@ -17,7 +17,7 @@ export function Text() {
             Artificial Intelligence,
           </p>
 
-          <a href="#" className="inline-flex items-center justify-center lg:justify-start gap-2 text-yellow-500 hover:text-yellow-400 font-medium transition mt-4 group">
+          <a href="https://chatgpt.com/share/6a5b1ba7-af78-83ec-89e3-19750dc3322f" className="inline-flex items-center justify-center lg:justify-start gap-2 text-yellow-500 hover:text-yellow-400 font-medium transition mt-4 group">
             <span>Masih ragu? Tanyakan langsung ke AI.</span>
             <span className="transform group-hover:translate-x-1 transition">→</span>
           </a>

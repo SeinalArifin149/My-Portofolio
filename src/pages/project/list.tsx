@@ -74,7 +74,6 @@ export default function ProjectSection() {
     return (
         <section className="bg-[#050b16] py-5">
             <div className="max-w-6xl mx-auto px-6">
-                {/* HORIZONTAL SCROLL UTAMA */}
                 <motion.div 
                     variants={containerVariants}
                     initial="hidden"
